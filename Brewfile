@@ -1,3 +1,4 @@
+tap "azure/functions"
 tap "bufbuild/buf"
 tap "dopplerhq/cli"
 tap "go-task/tap"
@@ -80,6 +81,10 @@ brew "duti"
 brew "harfbuzz"
 # LLVM bytecode to JavaScript compiler
 brew "emscripten"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
@@ -146,6 +151,8 @@ brew "iproute2mac"
 brew "kubeseal"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Library to communicate with iOS devices natively
 brew "libimobiledevice"
 # Next-gen compiler infrastructure
@@ -184,6 +191,8 @@ brew "pyqt@5"
 brew "qpdf"
 # Ruby version manager
 brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Shell Script Compiler
 brew "shc"
 # Prints a steam locomotive if you type sl instead of ls
@@ -194,6 +203,8 @@ brew "starship"
 brew "telnet"
 # Powerful free data recovery utility
 brew "testdisk"
+# Simplified and community-driven man pages
+brew "tldr"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Command-line unarchiving tools supporting multiple formats

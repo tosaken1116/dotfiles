@@ -21,6 +21,7 @@ antigen bundle Aloxaf/fzf-tab
 antigen bundle lukechilds/zsh-better-npm-completion
 antigen bundle "MichaelAquilina/zsh-you-should-use"
 antigen bundle hlissner/zsh-autopair
+antigen bundle changyuheng/zsh-interactive-cd
 
 # Theme
 antigen bundle romkatv/powerlevel10k
@@ -35,3 +36,17 @@ antigen apply
 # User settings
 export EDITOR=vim
 alias ll="ls -lah"
+alias ls='eza'
+alias ll='eza -lah'
+alias la='eza -a'
+alias lt='eza --tree --level=2'
+alias cat='bat'
+alias find='fd'
+alias help='tldr'
+alias lg='lazygit'
+
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
