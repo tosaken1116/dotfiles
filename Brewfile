@@ -1,6 +1,4 @@
-tap "azure/functions"
 tap "bufbuild/buf"
-tap "caskroom/cask"
 tap "dopplerhq/cli"
 tap "go-task/tap"
 tap "golangci/tap"
@@ -12,6 +10,8 @@ tap "suzuki-shunsuke/pinact"
 tap "tinygo-org/tools"
 # Run your GitHub Actions locally
 brew "act"
+# Plugin manager for zsh, inspired by oh-my-zsh and vundle
+brew "antigen"
 # Heavily optimized DEFLATE/zlib/gzip compression and decompression
 brew "libdeflate"
 # TIFF library and utilities
@@ -22,8 +22,6 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # C parser in Python
@@ -36,6 +34,8 @@ brew "cryptography"
 brew "awscli"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Collection of portable C++ source libraries
@@ -68,6 +68,8 @@ brew "gd"
 brew "libzip"
 # Dependency Manager for PHP
 brew "composer"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
 # Load/unload environment variables based on $PWD
@@ -102,6 +104,8 @@ brew "fontforge"
 brew "fonttools"
 # Monitor a directory for changes and run a shell command
 brew "fswatch"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
 # GitHub command-line tool
@@ -142,8 +146,6 @@ brew "iproute2mac"
 brew "kubeseal"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2"
 # Library to communicate with iOS devices natively
 brew "libimobiledevice"
 # Next-gen compiler infrastructure
@@ -152,10 +154,6 @@ brew "llvm"
 brew "mise"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
-# Protocol buffers (Google's data interchange format)
-brew "protobuf"
-# General-purpose lossless data-compression library
-brew "zlib"
 # NCurses Disk Usage
 brew "ncdu"
 # Libraries and data formats for array-oriented scientific data
@@ -164,6 +162,8 @@ brew "netcdf"
 brew "nlohmann-json"
 # Port scanning utility for large networks
 brew "nmap"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
 # Open Visual Inference And Optimization toolkit for AI inference
 brew "openvino"
 # Python bindings for v6 of Qt
@@ -204,6 +204,10 @@ brew "wget"
 brew "xcodegen"
 # Friendly and fast tool for sending HTTP requests
 brew "xh"
+# General-purpose lossless data-compression library
+brew "zlib"
+# UNIX shell (command interpreter)
+brew "zsh"
 # The best way of working with Protocol Buffers.
 brew "bufbuild/buf/buf"
 # The official Doppler CLI for managing your secrets
@@ -218,14 +222,16 @@ brew "ktr0731/evans/evans"
 brew "suzuki-shunsuke/pinact/pinact"
 # TinyGo is a Go compiler for small places. Microcontrollers, WebAssembly, and command-line tools. Based on LLVM.
 brew "tinygo-org/tools/tinygo"
-# JDK from the Java User Group (JUG)
-cask "adoptopenjdk"
 # Chromium based browser
 cask "arc"
 # Automated testing of webapps for Google Chrome
 cask "chromedriver"
+# Clipboard extension app
+cask "clipy"
 # All-in-one toolbox for developers
 cask "devutils"
+# Voice and text chat software
+cask "discord"
 # App to build and share containerised applications and microservices
 cask "docker"
 cask "font-ipafont"
@@ -233,15 +239,17 @@ cask "font-ipafont"
 cask "fontforge"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # Archive manager for data compression and backups
 cask "rar"
-# HTML to PDF renderer
-cask "wkhtmltopdf"
-
-brew "zsh"
-brew "wezterm"
-brew "antigen"
+# Control your tools with a few keystrokes
 cask "raycast"
+# Team communication and collaboration software
+cask "slack"
+# Music streaming service
+cask "spotify"
+# Open-source code editor
 cask "visual-studio-code"
