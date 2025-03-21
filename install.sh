@@ -10,6 +10,8 @@ brew bundle --file=~/dotfiles/Brewfile
 
 echo "🔗 Linking dotfiles..."
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.fzf.zsh ~/.fzf.zsh
+ln -sf ~/dotfiles/.p10k.zsh ~/.p10k.zsh
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 
