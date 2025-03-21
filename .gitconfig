@@ -1,0 +1,7 @@
+[user]
+name = tosaken1116
+email = tosaken.dev@gmail.com
+
+[core]
+editor = code --wait
+excludesfile = ~/.gitignore_global
